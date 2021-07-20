@@ -1,0 +1,16 @@
+import java.util.Scanner;
+public class mintodaysndyrs {
+
+    public static void main(String[] args) {
+
+        double MinInYear = 60*24*365;
+        Scanner input = new Scanner(System.in);
+        System.out.print("enter the minutes = ");
+        double min = input.nextDouble();
+
+        long years = (long) (min/MinInYear);
+        int days= (int)(min/60/24)%365;
+
+        System.out.println((int)min + " minutes is approximately " + years+" years and " + days+"days" );
+    }
+}
